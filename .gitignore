@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+venv/
+*.pyc
+__pycache__/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating Systems
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env
