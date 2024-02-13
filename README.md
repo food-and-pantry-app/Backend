@@ -1,10 +1,8 @@
-
-
 <p align="center">
   <img src="pics/pals.png" alt="Pantry Pals">
 </p>
 
-# PantryPalz
+# DineIn
 
 Welcome to **PantryPalz**, a comprehensive solution designed to streamline your food and pantry management. This project leverages modern web technologies to provide a user-friendly interface for tracking pantry items, planning meals, and sharing recipes. This document provides detailed instructions to get you started with the project, along with an overview of the technologies being used.
 
@@ -32,7 +30,7 @@ Before you begin, ensure you have the following installed on your system:
 ### Initial Setup
 
 1. **Clone the Repository**:
-   First, navigate to the directory where you want to clone the repository:  
+   First, navigate to the directory where you want to clone the repository:
 
    Then, clone the repository and navigate into it:
 
