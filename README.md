@@ -6,9 +6,7 @@
 
 Welcome to **Dinein**, a comprehensive solution designed to streamline your food and pantry management. This project leverages modern web technologies to provide a user-friendly interface for tracking pantry items, planning meals, and sharing recipes. This document provides detailed instructions to get you started with the project, along with an overview of the technologies being used.
 
-## Figma Design Link
-
-[https://www.figma.com/file/1Qx4LDWM2JeD0vpYaUP8qM/dineIn?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=LCdszI4nBm53Xsja-1]()
+### [Figma Design Link](https://www.figma.com/file/1Qx4LDWM2JeD0vpYaUP8qM/dineIn?type=design&node-id=0%3A1&mode=design&t=LCdszI4nBm53Xsja-1)
 
 ## Technologies Used
 
@@ -39,8 +37,8 @@ Before you begin, ensure you have the following installed on your system:
    Then, clone the repository and navigate into it:
 
    ```
-   git clone https://github.com/food-and-pantry-app/pantrypalz.git
-   cd pantrypalz
+   git clone https://github.com/food-and-pantry-app/dinein.git
+   cd dinein
    ```
 2. **Frontend Setup**:
    Install dependencies and start the frontend development server:
@@ -79,7 +77,3 @@ Before you begin, ensure you have the following installed on your system:
 - **React**: To get more familiar with React, check out the [official React tutorial](https://reactjs.org/tutorial/tutorial.html).
 - **Flask**: For Flask, the [Flask Mega-Tutorial by Miguel Grinberg](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) is an excellent comprehensive resource.
 - **MongoDB**: Enhance your MongoDB skills through courses available at [MongoDB University](https://university.mongodb.com/).
-
-## Getting Help
-
-If you encounter any problems or have questions, please file an issue on the GitHub repository, or reach out to the project maintainers directly.
