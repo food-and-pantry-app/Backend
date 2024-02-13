@@ -6,7 +6,7 @@
 
 Welcome to **Dinein**, a comprehensive solution designed to streamline your food and pantry management. This project leverages modern web technologies to provide a user-friendly interface for tracking pantry items, planning meals, and sharing recipes. This document provides detailed instructions to get you started with the project, along with an overview of the technologies being used.
 
-### [Figma Design Link](https://www.figma.com/file/1Qx4LDWM2JeD0vpYaUP8qM/dineIn?type=design&node-id=0%3A1&mode=design&t=LCdszI4nBm53Xsja-1)
+<a href="https://www.figma.com/file/1Qx4LDWM2JeD0vpYaUP8qM/dineIn?type=design&node-id=0%3A1&mode=design&t=LCdszI4nBm53Xsja-1" target="_blank">Design in Figma</a>
 
 ## Technologies Used
 
