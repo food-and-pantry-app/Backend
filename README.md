@@ -4,7 +4,11 @@
 
 # DineIn
 
-Welcome to **PantryPalz**, a comprehensive solution designed to streamline your food and pantry management. This project leverages modern web technologies to provide a user-friendly interface for tracking pantry items, planning meals, and sharing recipes. This document provides detailed instructions to get you started with the project, along with an overview of the technologies being used.
+Welcome to **Dinein**, a comprehensive solution designed to streamline your food and pantry management. This project leverages modern web technologies to provide a user-friendly interface for tracking pantry items, planning meals, and sharing recipes. This document provides detailed instructions to get you started with the project, along with an overview of the technologies being used.
+
+## Figma Design Link
+
+[https://www.figma.com/file/1Qx4LDWM2JeD0vpYaUP8qM/dineIn?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=LCdszI4nBm53Xsja-1]()
 
 ## Technologies Used
 
