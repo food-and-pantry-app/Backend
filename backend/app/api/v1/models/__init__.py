@@ -1,2 +1,2 @@
-# Example content for /app/models/__init__.py if importing models directly
-from .recipe import Recipe
+# Corrected content for /app/api/v1/models/__init__.py
+from .user import UserModel

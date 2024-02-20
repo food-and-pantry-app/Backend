@@ -4,54 +4,52 @@
 
 # DineIn
 
-Welcome to **Dinein**, a comprehensive AI solution designed to streamline your food and pantry management. This project leverages modern web technologies to provide a user-friendly interface for tracking pantry items, planning meals, and sharing recipes. This document provides detailed instructions to get you started with the project, along with an overview of the technologies being used.
-
-<a href="https://www.figma.com/file/1Qx4LDWM2JeD0vpYaUP8qM/dineIn?type=design&node-id=0%3A1&mode=design&t=LCdszI4nBm53Xsja-1" target="_blank">Design in Figma</a>
-
 ## Technologies Used
 
-- **Frontend**:
-
-  - **React**: A JavaScript library for building user interfaces. [React Documentation](https://reactjs.org/docs/getting-started.html)
-  - **Vite**: A build tool that aims to provide a faster and leaner development experience for modern web projects. [Vite Documentation](https://vitejs.dev/guide/)
-- **Backend**:
-
-  - **Python/Flask**: A lightweight WSGI web application framework. It's designed to make getting started quick and easy, with the ability to scale up to complex applications. [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
-  - **MongoDB**: A source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. [MongoDB Documentation](https://docs.mongodb.com/)
+- **Frontend**: React with Vite for a fast development experience.
+- **Backend**: Python/Flask for the server-side logic.
+- **Database**: MongoDB, a NoSQL database, for storing user data and recipes.
 
 ## Getting Started
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed on your system:
+Ensure you have the following installed on your system:
 
-- **Node.js and npm**: [Download Node.js and npm](https://nodejs.org/en/download/)
-- **Python**: [Download Python](https://www.python.org/downloads/)
-- **MongoDB**: [Install MongoDB](https://docs.mongodb.com/manual/installation/)
+- Node.js and npm: [Node.js download](https://nodejs.org/en/download/)
+- Python: [Python download](https://www.python.org/downloads/)
+- MongoDB: Follow the installation guide below.
 
-### Initial Setup
+### Installing MongoDB
+
+1. **Install MongoDB**: Visit the [official MongoDB installation guide](https://docs.mongodb.com/manual/installation/) and follow the instructions for your operating system.
+2. **Start MongoDB**: Once installed, you can start MongoDB on your system. The command may vary depending on your operating system. For most systems, the command is as follows:
+
+   ```
+   brew services start mongodb/brew/mongodb-community
+   ```
+
+   This command uses Homebrew for macOS. Adjust accordingly for your OS.
+
+### Setting Up the Project
 
 1. **Clone the Repository**:
-   First, navigate to the directory where you want to clone the repository:
-
-   Then, clone the repository and navigate into it:
+   Open your terminal, navigate to the directory where you want to clone the repository, and run:
 
    ```
    git clone https://github.com/food-and-pantry-app/dinein.git
    cd dinein
    ```
 2. **Frontend Setup**:
-   Install dependencies and start the frontend development server:
+   Navigate to the frontend directory, install dependencies, and start the development server:
 
    ```
    cd frontend
    npm install
    npm run dev
    ```
-
-   Your frontend should now be running and accessible.
 3. **Backend Setup**:
-   Set up the backend environment, install dependencies, and start the Flask application:
+   Set up the Python virtual environment, activate it, install dependencies, and start the Flask application:
 
    ```
    cd ../backend
@@ -59,21 +57,36 @@ Before you begin, ensure you have the following installed on your system:
    source venv/bin/activate  # Unix/macOS
    venv\Scripts\activate     # Windows
    pip install -r requirements.txt
-   flask run
+   ./startProject.sh
    ```
 
-   Your backend API should now be up and running.
-4. **Database Configuration**:
-   Make sure MongoDB is running on your system. Follow the MongoDB setup instructions specific to your operating system in the MongoDB documentation linked above.
+### Testing Endpoints with curl
+
+After setting up both the frontend and backend, you can test the API endpoints. Here are some sample curl commands:
+
+- **Create a New User**:
+  ```
+  curl -X POST http://127.0.0.1:5000/api/v1/users/ -H "Content-Type: application/json" -d '{...your JSON data here...}'
+  ```
+- **Retrieve a User by UserID**:
+  ```
+  curl http://127.0.0.1:5000/api/v1/users/<UserID>
+  ```
+
+  Replace `<UserID>` with the actual user ID from your MongoDB.
 
 ## Development Practices
 
-- **Coding Standards**: Adhere to the [PEP 8](https://pep8.org/) style guide for Python and the [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/) for JavaScript.
-- **Commit Messages**: Write clear, meaningful commit messages that accurately describe your changes.
-- **Pull Requests**: All changes should be submitted via pull requests and reviewed by at least one other team member before merging.
+- Follow the [PEP 8 style guide](https://pep8.org/) for Python and the [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/) for JavaScript.
+- Write clear, meaningful commit messages.
+- Submit changes via pull requests and ensure at least one team member reviews them before merging.
 
 ## Additional Resources
 
-- **React**: To get more familiar with React, check out the [official React tutorial](https://reactjs.org/tutorial/tutorial.html).
-- **Flask**: For Flask, the [Flask Mega-Tutorial by Miguel Grinberg](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) is an excellent comprehensive resource.
-- **MongoDB**: Enhance your MongoDB skills through courses available at [MongoDB University](https://university.mongodb.com/).
+- React Tutorial: [official React tutorial](https://reactjs.org/tutorial/tutorial.html)
+- Flask Tutorial: [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+- MongoDB University: [MongoDB courses](https://university.mongodb.com/)
+
+---
+
+This README provides a foundational guide to get the DineIn project up and running on your local machine. For detailed information on the technologies used and further development guidelines, please refer to the respective documentation linked in the guide.
