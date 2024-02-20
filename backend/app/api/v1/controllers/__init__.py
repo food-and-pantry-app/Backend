@@ -1,2 +1,2 @@
-# Example content for /app/controllers/__init__.py if organizing controllers
-from .recipe_controller import RecipeController
+# Corrected content for /app/api/v1/controllers/__init__.py
+from .userController import user_blueprint

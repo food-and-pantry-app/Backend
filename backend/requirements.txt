@@ -1,0 +1,5 @@
+Flask
+Flask-PyMongo
+openai
+requests  # Commonly used for making HTTP requests, similar to Axios in JavaScript
+python-dotenv  # To manage environment variables more conveniently
