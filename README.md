@@ -85,8 +85,4 @@ After setting up both the frontend and backend, you can test the API endpoints. 
 
 - React Tutorial: [official React tutorial](https://reactjs.org/tutorial/tutorial.html)
 - Flask Tutorial: [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-- MongoDB University: [MongoDB courses](https://university.mongodb.com/)
-
----
-
-This README provides a foundational guide to get the DineIn project up and running on your local machine. For detailed information on the technologies used and further development guidelines, please refer to the respective documentation linked in the guide.
+- MongoDB University: [MongoDB courses](https://university.mongodb.com/)d
