@@ -85,4 +85,4 @@ After setting up both the frontend and backend, you can test the API endpoints. 
 
 - React Tutorial: [official React tutorial](https://reactjs.org/tutorial/tutorial.html)
 - Flask Tutorial: [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-- MongoDB University: [MongoDB courses](https://university.mongodb.com/)
+- MongoDB University: [MongoDB courses](https://university.mongodb.com/)d
