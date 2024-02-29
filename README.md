@@ -2,87 +2,78 @@
   <img src="pics/pals.png" alt="Pantry Pals">
 </p>
 
-# DineIn
+# DineIn Backend Setup Guide
 
-## Technologies Used
+Welcome to the DineIn backend setup guide! This document will walk you through the steps to get the backend part of the DineIn application up and running on your local machine. Our backend is built using Python/Flask and MongoDB, providing API services for the DineIn app.
 
-- **Frontend**: React with Vite for a fast development experience.
-- **Backend**: Python/Flask for the server-side logic.
-- **Database**: MongoDB, a NoSQL database, for storing user data and recipes.
+## Prerequisites
+
+Before you begin, make sure you have the following installed on your machine:
+
+- Python 3.7 or newer
+- pip (Python package installer)
+- MongoDB
+- Homebrew (for macOS users)
 
 ## Getting Started
 
-### Prerequisites
+1. **Clone the Repository**
 
-Ensure you have the following installed on your system:
+   First, clone the backend repository to your local machine:
 
-- Node.js and npm: [Node.js download](https://nodejs.org/en/download/)
-- Python: [Python download](https://www.python.org/downloads/)
-- MongoDB: Follow the installation guide below.
+   ```
+   git clone https://github.com/food-and-pantry-app/Backend
+   cd backend
+   ```
+2. **Setup Virtual Environment**
 
-### Installing MongoDB
+   It's a good practice to use a virtual environment for Python projects. This keeps your project's dependencies isolated from your global Python environment.
 
-1. **Install MongoDB**: Visit the [official MongoDB installation guide](https://docs.mongodb.com/manual/installation/) and follow the instructions for your operating system.
-2. **Start MongoDB**: Once installed, you can start MongoDB on your system. The command may vary depending on your operating system. For most systems, the command is as follows:
+   ```
+   python -m venv venv
+   ```
+
+   Activate the virtual environment:
+
+   - On macOS/Linux:
+     ```
+     source venv/bin/activate
+     ```
+   - On Windows:
+     ```
+     venv\Scripts\activate
+     ```
+3. **Install Dependencies**
+
+   With the virtual environment activated, install the project dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+4. **Start MongoDB**
+
+   Ensure MongoDB is installed and set up on your system. You can start MongoDB using Homebrew with the following command:
 
    ```
    brew services start mongodb/brew/mongodb-community
    ```
+5. **Start the Flask Application**
 
-   This command uses Homebrew for macOS. Adjust accordingly for your OS.
-
-### Setting Up the Project
-
-1. **Clone the Repository**:
-   Open your terminal, navigate to the directory where you want to clone the repository, and run:
+   Use the provided `startProject.sh` script to start the Flask application along with MongoDB. This script activates the virtual environment, starts MongoDB, and runs the Flask app:
 
    ```
-   git clone https://github.com/food-and-pantry-app/dinein.git
-   cd dinein
-   ```
-2. **Frontend Setup**:
-   Navigate to the frontend directory, install dependencies, and start the development server:
-
-   ```
-   cd frontend
-   npm install
-   npm run dev
-   ```
-3. **Backend Setup**:
-   Set up the Python virtual environment, activate it, install dependencies, and start the Flask application:
-
-   ```
-   cd ../backend
-   python -m venv venv
-   source venv/bin/activate  # Unix/macOS
-   venv\Scripts\activate     # Windows
-   pip install -r requirements.txt
+   chmod +x startProject.sh
    ./startProject.sh
    ```
 
-### Testing Endpoints with curl
+   This will start the Flask development server, making the backend accessible at `http://127.0.0.1:5000`.
 
-After setting up both the frontend and backend, you can test the API endpoints. Here are some sample curl commands:
+## What's Next?
 
-- **Create a New User**:
-  ```
-  curl -X POST http://127.0.0.1:5000/api/v1/users/ -H "Content-Type: application/json" -d '{...your JSON data here...}'
-  ```
-- **Retrieve a User by UserID**:
-  ```
-  curl http://127.0.0.1:5000/api/v1/users/<UserID>
-  ```
+After setting up the backend, you can begin developing features, connecting with the database, and testing endpoints using tools like Postman or curl.
 
-  Replace `<UserID>` with the actual user ID from your MongoDB.
+## Additional Notes
 
-## Development Practices
-
-- Follow the [PEP 8 style guide](https://pep8.org/) for Python and the [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/) for JavaScript.
-- Write clear, meaningful commit messages.
-- Submit changes via pull requests and ensure at least one team member reviews them before merging.
-
-## Additional Resources
-
-- React Tutorial: [official React tutorial](https://reactjs.org/tutorial/tutorial.html)
-- Flask Tutorial: [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-- MongoDB University: [MongoDB courses](https://university.mongodb.com/)d
+- **MongoDB Setup**: If you encounter issues starting MongoDB, please refer to the [official MongoDB documentation](https://docs.mongodb.com/manual/installation/) for detailed setup instructions.
+- **Virtual Environment**: Always activate the virtual environment (`source venv/bin/activate` or `venv\Scripts\activate`) before working on the project to ensure you're using the correct Python and dependencies.
+- **Troubleshooting**: For any setup issues or if commands fail, double-check you have the correct versions of Python and pip installed, and that MongoDB is properly set up and running.
