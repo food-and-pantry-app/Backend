@@ -46,14 +46,14 @@ def update(id):
                 }
     }
 
-    recipes.update_one({"id": id}, all_updates)
+    recipes.update_one({"_id": id}, all_updates)
 
     return redirect(url_for('index'))
 
 db = client.RECIPES
 recipes = db.recipes
 
-#recipes.insertone({'title': "pbj", 'ingredients': ["peanut butter", "jelly", "bread"], 'steps': ["spread spreads on bread", "smoosh together", "eat"], 'category': "Quick Eats"})
+recipes.insert_one({'title': "pbj", 'ingredients': ["peanut butter", "jelly", "bread"], 'steps': ["spread spreads on bread", "smoosh together", "eat"], 'category': "Quick Eats"})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True) 
